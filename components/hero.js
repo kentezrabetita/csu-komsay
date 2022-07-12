@@ -3,7 +3,7 @@ import Construction from './construction';
 
 export default function Hero() {
   return (
-    <section className='flex items-center justify-center h-full'>
+    <section className='flex h-full'>
       <Construction />
     </section>
   );
