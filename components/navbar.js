@@ -7,16 +7,16 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className='container mx-auto flex flex-row justify-between items-center p-4 md:p-6 font-bold xl:px-32 min-w-fit'>
+      <nav className='container flex flex-row items-center justify-between p-4 mx-auto font-bold md:p-6 xl:px-32 min-w-fit'>
         <div className='flex flex-row items-center space-x-4'>
           <Image src='/csu.png' width={50} height={50} alt='csu icon' />
           <Link href='/'>
-            <a className='hover:text-green-500 transition'>Computer Science</a>
+            <a className='transition hover:text-green-500'>Computer Science</a>
           </Link>
         </div>
-        <div className='hidden md:flex flex-row space-x-10 items-center'>
+        <div className='flex-row items-center hidden space-x-10 md:flex'>
           <div>
-            <Link href='/'>
+            <Link href='/about'>
               <a>About</a>
             </Link>
           </div>
@@ -26,19 +26,19 @@ export default function Navbar() {
             </Link>
           </div>
           <div>
-            <Link href='/'>
+            <Link href='/services'>
               <a>Services</a>
             </Link>
           </div>
           <div>
-            <Link href='/'>
+            <Link href='/contact'>
               <a>Contact</a>
             </Link>
           </div>
         </div>
-        <div className='hidden md:flex flex-row space-x-6 items-center'>
+        <div className='flex-row items-center hidden space-x-6 md:flex'>
           <div>
-            <button className='p-2 px-8 bg-green-700 text-white rounded-lg hover:scale-105 transition-all ease-in-out'>
+            <button className='p-2 px-8 text-white transition-all ease-in-out bg-green-700 rounded-lg hover:scale-105'>
               Login
             </button>
           </div>
@@ -46,11 +46,11 @@ export default function Navbar() {
         <div className='md:hidden'>
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className='p-2 px-4 bg-green-700 text-white rounded-lg'
+            className='p-2 px-4 text-white bg-green-700 rounded-lg'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='h-6 w-6'
+              className='w-6 h-6'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -69,7 +69,7 @@ export default function Navbar() {
         <div className='fixed top-0 flex bg-white flex-col items-center self-end justify-center py-8 space-y-2 text-black h-[100vh] left-0 right-0 font-bold'>
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className='p-2 px-4 bg-green-700 text-white rounded-full absolute top-5 right-4'
+            className='absolute p-2 px-4 text-white bg-green-700 rounded-full top-5 right-4'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -87,27 +87,27 @@ export default function Navbar() {
             </svg>
           </button>
           <Link href='/about'>
-            <a className='hover:bg-green-700 hover:text-white transition-all ease-in-out p-2 rounded-lg'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
               About
             </a>
           </Link>
-          <Link href='/'>
-            <a className='hover:bg-green-700 hover:text-white transition-all ease-in-out p-2 rounded-lg'>
+          <Link href='/news'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
               News
             </a>
           </Link>
-          <Link href='/'>
-            <a className='hover:bg-green-700 hover:text-white transition-all ease-in-out p-2 rounded-lg'>
+          <Link href='/services'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
               Services
             </a>
           </Link>
-          <Link href='/'>
-            <a className='hover:bg-green-700 hover:text-white transition-all ease-in-out p-2 rounded-lg'>
+          <Link href='/contact'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
               Contact
             </a>
           </Link>
           <Link href='/'>
-            <a className='hover:bg-green-700 hover:text-white transition-all ease-in-out p-2 rounded-lg'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
               Login
             </a>
           </Link>
