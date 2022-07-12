@@ -38,9 +38,11 @@ export default function Navbar() {
         </div>
         <div className='flex-row items-center hidden space-x-6 md:flex'>
           <div>
-            <button className='p-2 px-8 text-white transition-all ease-in-out bg-green-700 rounded-lg hover:scale-105'>
-              Login
-            </button>
+            <Link href='/accepted/student'>
+              <button className='p-2 px-8 text-white transition-all ease-in-out bg-green-700 rounded-lg hover:scale-105'>
+                <a>Accepted Freshmen</a>
+              </button>
+            </Link>
           </div>
         </div>
         <div className='md:hidden'>
