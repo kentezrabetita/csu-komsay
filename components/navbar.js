@@ -12,35 +12,35 @@ export default function Navbar() {
           <Image src='/csu.png' width={50} height={60} alt='csu icon' />
           <Image src='/ccis.png' width={45} height={50} alt='ccis icon' />
           <Link href='/'>
-            <a className='transition hover:text-green-500'>Computer Science</a>
+            <a className='transition hover:text-orange-400'>Computer Science</a>
           </Link>
         </div>
         <div className='flex-row items-center hidden space-x-10 lg:flex'>
           <div>
             <Link href='/about'>
-              <a>About</a>
+              <a className='transition hover:text-orange-400'>About</a>
             </Link>
           </div>
           <div>
             <Link href='/news'>
-              <a>News</a>
+              <a className='transition hover:text-orange-400'>News</a>
             </Link>
           </div>
           <div>
             <Link href='/services'>
-              <a>Services</a>
+              <a className='transition hover:text-orange-400'>Services</a>
             </Link>
           </div>
           <div>
             <Link href='/contact'>
-              <a>Contact</a>
+              <a className='transition hover:text-orange-400'>Contact</a>
             </Link>
           </div>
         </div>
         <div className='flex-row items-center hidden space-x-6 lg:flex'>
           <div>
             <Link href='/accepted/student'>
-              <button className='p-2 px-8 text-white transition-all ease-in-out bg-green-700 rounded-lg hover:scale-105'>
+              <button className='p-2 px-8 text-white transition-all ease-in-out bg-orange-400 rounded-lg hover:scale-105'>
                 <a>Accepted Freshmen</a>
               </button>
             </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className='lg:hidden'>
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className='p-2 px-4 text-white bg-green-700 rounded-lg'
+            className='p-2 px-4 text-white bg-orange-400 rounded-lg'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className='fixed top-0 z-50 flex bg-white flex-col items-center self-end justify-center py-8 space-y-2 text-black h-[100vh] left-0 right-0 font-bold'>
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className='absolute p-2 px-4 text-white bg-green-700 rounded-full top-5 right-4'
+            className='absolute p-2 px-4 text-white bg-orange-400 rounded-full top-5 right-4'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -90,27 +90,27 @@ export default function Navbar() {
             </svg>
           </button>
           <Link href='/about'>
-            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-orange-400 hover:text-white'>
               About
             </a>
           </Link>
           <Link href='/news'>
-            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-orange-400 hover:text-white'>
               News
             </a>
           </Link>
           <Link href='/services'>
-            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-orange-400 hover:text-white'>
               Services
             </a>
           </Link>
           <Link href='/contact'>
-            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-orange-400 hover:text-white'>
               Contact
             </a>
           </Link>
           <Link href='/accepted/student'>
-            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
+            <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-orange-400 hover:text-white'>
               Accepted Freshmen
             </a>
           </Link>
