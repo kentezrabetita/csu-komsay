@@ -1,6 +1,6 @@
 import React from 'react';
-import MainLayout from '../components/layout';
+import Landing from '../components/landing';
 
 export default function News() {
-  return <MainLayout />;
+  return <Landing />;
 }
