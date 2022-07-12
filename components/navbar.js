@@ -9,7 +9,8 @@ export default function Navbar() {
     <header>
       <nav className='container flex flex-row items-center justify-between p-4 mx-auto font-bold md:p-6 xl:px-32 min-w-fit'>
         <div className='flex flex-row items-center space-x-4'>
-          <Image src='/csu.png' width={50} height={50} alt='csu icon' />
+          <Image src='/csu.png' width={50} height={60} alt='csu icon' />
+          <Image src='/ccis.png' width={45} height={50} alt='ccis icon' />
           <Link href='/'>
             <a className='transition hover:text-green-500'>Computer Science</a>
           </Link>
