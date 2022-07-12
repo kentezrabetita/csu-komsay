@@ -1,11 +1,17 @@
 import React from 'react';
 import MainLayout from '../../components/layout';
 import AcceptedStudents from '../../components/acceptedStudent';
+import Head from 'next/head';
 
 export default function Students() {
   return (
-    <MainLayout>
-      <AcceptedStudents />
-    </MainLayout>
+    <>
+      <Head>
+        <title>Accepted Students</title>
+      </Head>
+      <MainLayout>
+        <AcceptedStudents />
+      </MainLayout>
+    </>
   );
 }
