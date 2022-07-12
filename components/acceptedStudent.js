@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StudentData from '../data/students.json';
 import StudentCard from './studentCard';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function AcceptedStudents() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,19 +11,23 @@ export default function AcceptedStudents() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.07,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { type: 'spring', stiffness: 100 },
+    },
   };
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-5'>
-      <div className='text-3xl font-bold text-center'>
+      <div className='text-3xl font-bold text-center lg:text-5xl'>
         <h1>CONGRATULATIONS!</h1>
       </div>
       <div>

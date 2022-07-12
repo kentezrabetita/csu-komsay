@@ -1,11 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 export default function StudentCard({ student }) {
   return (
-    <div className='flex flex-col p-3 space-y-2 border rounded-lg'>
-      {/* <div className='flex flex-row p-6 space-x-4 border rounded-lg'></div> */}
+    <div className='flex flex-col p-3 space-y-2 border rounded-lg lg:flex-row lg:p-6'>
       <div className='flex justify-center'>
         {student.sex === 'Female' ? (
           <Image
@@ -23,7 +21,7 @@ export default function StudentCard({ student }) {
           />
         )}
       </div>
-      <div className='flex flex-col justify-center pl-2 space-y-2 text-center'>
+      <div className='flex flex-col justify-center pl-2 space-y-2 text-center lg:text-left lg:pl-6'>
         <div>
           <span className='text-gray-400'>SURNAME:</span> {student.surname}
         </div>

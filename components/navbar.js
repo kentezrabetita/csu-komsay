@@ -14,7 +14,7 @@ export default function Navbar() {
             <a className='transition hover:text-green-500'>Computer Science</a>
           </Link>
         </div>
-        <div className='flex-row items-center hidden space-x-10 md:flex'>
+        <div className='flex-row items-center hidden space-x-10 lg:flex'>
           <div>
             <Link href='/about'>
               <a>About</a>
@@ -36,7 +36,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className='flex-row items-center hidden space-x-6 md:flex'>
+        <div className='flex-row items-center hidden space-x-6 lg:flex'>
           <div>
             <Link href='/accepted/student'>
               <button className='p-2 px-8 text-white transition-all ease-in-out bg-green-700 rounded-lg hover:scale-105'>
@@ -45,7 +45,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
           <button
             onClick={() => setShowMenu(!showMenu)}
             className='p-2 px-4 text-white bg-green-700 rounded-lg'
