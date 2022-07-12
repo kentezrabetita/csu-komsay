@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
 import StudentData from '../data/students.json';
 import StudentCard from './studentCard';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AcceptedStudents() {
   const [searchTerm, setSearchTerm] = useState('');
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-5'>
@@ -19,7 +35,12 @@ export default function AcceptedStudents() {
           onChange={(event) => setSearchTerm(event.target.value)}
         />
       </div>
-      <div className='flex flex-col space-y-4 lg:flex-row md:grid md:grid-cols-2 xl:grid-cols-3 md:space-y-0 md:gap-8'>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        animate='show'
+        className='flex flex-col space-y-4 lg:flex-row md:grid md:grid-cols-2 xl:grid-cols-3 md:space-y-0 md:gap-8'
+      >
         {StudentData.filter((student) => {
           if (searchTerm === '') return student;
           else if (
@@ -32,9 +53,13 @@ export default function AcceptedStudents() {
           }
           return false;
         }).map((student) => {
-          return <StudentCard key={student.applicationno} student={student} />;
+          return (
+            <motion.div key={student.applicationno} variants={item}>
+              <StudentCard student={student} />
+            </motion.div>
+          );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }
