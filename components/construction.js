@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function Construction() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='container flex flex-col items-center justify-center text-center'>
       <div className='text-3xl font-bold'>Page is still under construction</div>
       <motion.div
+        className='p-4'
         animate={{
           y: 10,
         }}

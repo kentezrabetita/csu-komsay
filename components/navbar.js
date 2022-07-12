@@ -68,7 +68,7 @@ export default function Navbar() {
         </div>
       </nav>
       {showMenu && (
-        <div className='fixed top-0 flex bg-white flex-col items-center self-end justify-center py-8 space-y-2 text-black h-[100vh] left-0 right-0 font-bold'>
+        <div className='fixed top-0 z-50 flex bg-white flex-col items-center self-end justify-center py-8 space-y-2 text-black h-[100vh] left-0 right-0 font-bold'>
           <button
             onClick={() => setShowMenu(!showMenu)}
             className='absolute p-2 px-4 text-white bg-green-700 rounded-full top-5 right-4'
@@ -108,9 +108,9 @@ export default function Navbar() {
               Contact
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='/accepted/student'>
             <a className='p-2 transition-all ease-in-out rounded-lg hover:bg-green-700 hover:text-white'>
-              Login
+              Accepted Freshmen
             </a>
           </Link>
         </div>

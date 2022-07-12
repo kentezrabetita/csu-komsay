@@ -23,7 +23,7 @@ export default function AcceptedStudents() {
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-5'>
-      <div className='text-4xl font-bold text-center'>
+      <div className='text-3xl font-bold text-center'>
         <h1>CONGRATULATIONS!</h1>
       </div>
       <div>
