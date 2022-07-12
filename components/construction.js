@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 export default function Construction() {
   return (
     <div className='container flex flex-col items-center justify-center text-center'>
-      <div className='text-3xl font-bold'>Page is still under construction</div>
       <motion.div
         className='p-4'
         animate={{
@@ -20,6 +19,9 @@ export default function Construction() {
           alt='csu icon'
         />
       </motion.div>
+      <div className='text-2xl'>
+        The site is still under construction. Thank you for your patience.
+      </div>
     </div>
   );
 }
