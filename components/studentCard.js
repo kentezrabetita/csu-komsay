@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function StudentCard({ student }) {
   return (
-    <div className='flex flex-col p-3 space-y-2 border rounded-lg lg:flex-row lg:p-6'>
+    <div className='flex flex-col p-3 space-y-2 border rounded-lg bg-[#EAEAEA] shadow-md lg:flex-row lg:p-6'>
       <div className='flex justify-center'>
         {student.sex === 'Female' ? (
           <Image src='/female_avatar.svg' width={150} height={150} />
