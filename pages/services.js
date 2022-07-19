@@ -1,6 +1,6 @@
 import React from 'react';
-import Landing from '../components/landing';
 import Head from 'next/head';
+import Construction from '../components/construction';
 
 export default function Services() {
   return (
@@ -8,7 +8,7 @@ export default function Services() {
       <Head>
         <title>Services</title>
       </Head>
-      <Landing />
+      <Construction />
     </>
   );
 }

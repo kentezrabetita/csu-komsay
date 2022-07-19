@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from '../components/landing';
+import Construction from '../components/construction';
 import Head from 'next/head';
 
 export default function Contact() {
@@ -8,7 +8,7 @@ export default function Contact() {
       <Head>
         <title>About</title>
       </Head>
-      <Landing />
+      <Construction />
     </>
   );
 }

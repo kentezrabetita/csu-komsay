@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from '../components/landing';
+import Construction from '../components/construction';
 import Head from 'next/head';
 
 export default function News() {
@@ -8,7 +8,7 @@ export default function News() {
       <Head>
         <title>News</title>
       </Head>
-      <Landing />
+      <Construction />
     </>
   );
 }
