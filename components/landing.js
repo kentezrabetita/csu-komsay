@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from './navbar';
 import Hero from './hero';
+import MainLayout from './layout';
 
 export default function Landing() {
   return (
-    <div className='flex flex-col h-screen'>
-      <Navbar />
-      <Hero />
-    </div>
+    <MainLayout>
+      <section className='flex flex-col h-screen'>
+        <Hero />
+      </section>
+    </MainLayout>
   );
 }
