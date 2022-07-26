@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import MainLayout from './layout';
 
 export default function Construction() {
   return (
-    <MainLayout>
-      <div className='container h-[100vh] flex flex-col p-6 mx-auto text-center'>
+    <main>
+      <div className='container flex flex-col items-center justify-center h-screen p-6 mx-auto text-center'>
+        <div className='flex flex-col space-y-2'>
+          <h1 className='text-5xl font-bold text-orange-500'>COMING SOON</h1>
+          <p>The site is still under development. Stay tuned.</p>
+        </div>
         <motion.div
           className='p-4'
           animate={{
@@ -21,10 +24,7 @@ export default function Construction() {
             alt='csu icon'
           />
         </motion.div>
-        <div className='text-lg md:text-2xl'>
-          The site is still under construction. Thank you for your patience.
-        </div>
       </div>
-    </MainLayout>
+    </main>
   );
 }

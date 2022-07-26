@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Landing from '../components/landing';
+import Construction from '../components/construction';
 
 export default function Home() {
   return (
@@ -81,7 +82,7 @@ export default function Home() {
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
       </Head>
-      <Landing />
+      <Construction />
     </>
   );
 }
