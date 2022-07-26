@@ -89,6 +89,7 @@ export default function Footer() {
           <a
             href='https://kentezrabetita.vercel.app/'
             target='_blank'
+            rel='noreferrer'
             className='font-bold hover:underline underline-offset-2'
           >
             Kent Ezra Betita
